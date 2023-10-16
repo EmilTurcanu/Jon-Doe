@@ -1,0 +1,115 @@
+body {
+    font-family: 'Martian Mono', monospace;
+    background-color: #222;
+    color: white;
+}
+.banner {
+    border: 0.1px solid transparent;
+    height: 100vh;
+}
+.banner h1 {
+    margin-top: 40vh;
+    font-size: 7vh;
+    font-weight: 800;
+    color: white;
+}
+.banner h2 {
+    color: gray;
+}
+.banner span {
+    color: orange;
+}
+.banner h1,
+.banner h2,
+.banner p {
+    margin-left: 20vw;
+    background-image: radial-gradient(transparent);
+    background-repeat: no-repeat;
+    margin-left: 20vw;
+    position: relative;
+    z-index: 1;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #222222bd;
+    top: 37vh;
+    right: 50vw;
+    bottom: 20vh;
+    left: 18vw;
+    box-shadow: 0 0 8px 0px #ffa50070;
+}
+.banner i {
+    color: white;
+}
+.banner .href {
+    text-decoration: none;
+}
+@keyframes fadeInOut {
+    from {opacity: 1;}
+    to {opacity: 0.6;}
+}
+.banner .pictures {
+    border: 1px solid green;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+.banner .pictures img {
+    object-fit: cover;
+    margin: 1vh;
+    animation: fadeInOut 5s infinite linear;
+}
+.banner .pictures img:nth-child(1) {
+    width: 23vw;
+    height: 50vh;
+    object-fit: cover;
+    animation-delay: -1;
+}
+.banner .pictures img:nth-child(2) {
+    width: 20vw;
+    height: 50vh;
+    object-fit: cover;
+    animation-delay: -2;
+}
+.banner .pictures img:nth-child(3) {
+    width: 32vw;
+    height: 50vh;
+    object-fit: cover;
+    animation-delay: -3;
+}
+.banner .pictures img:nth-child(4) {
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    animation-delay: -4;
+}
+.banner .pictures img:nth-child(5) {
+    width: 20vw;
+    height: 50vh;
+    object-fit: cover;
+    animation-delay: -5;
+}
+.banner .pictures img:nth-child(6) {
+    width: 50vw;
+    height: 45vh;
+    object-fit: cover;
+    animation-delay: -6;
+}
+.banner .pictures img:nth-child(7) {
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    animation-delay: -7;
+}
+.banner .pictures img:nth-child(8) {
+    width: 50vw;
+    height: 40vh;
+    object-fit: cover;
+    animation-delay: -8;
+}
